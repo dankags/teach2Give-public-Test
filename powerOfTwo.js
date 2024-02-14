@@ -7,6 +7,7 @@ function isPowerOfTwo(n) {
    while (n !== 0) {
       n /= 2;
       //check if the number after being divided by 2 is equal 1 and breaks the loop 
+      // meaning if n === 1 then n is of power of 2
       if (n === 1) { break }
       //checks if n after being divided by 2 its remainder is 0 if not the bool is set to false
       //which means that the n number is not of power of two and then it breaks
@@ -16,7 +17,7 @@ function isPowerOfTwo(n) {
        }
    }
    return bool
-   //  return parseInt((Math.ceil((Math.log(n) / Math.log(2))))) == parseInt((Math.floor((Math.log(n) / Math.log(2)))))
+  
   }
   
   // Examples
